@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/DangNhap-DangKy.css" />
+</head>
+
+<body>
+    <section class="container">
+        <form onsubmit="onSubmitForm(this);
+                return false;">
+            <h1>Create Account</h1>
+            <section class="form-control">
+                <input id="username" type="text" placeholder="Username" required />
+                <small></small>
+                <span></span>
+            </section>
+            <section class="form-control">
+                <input id="email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required />
+                <small></small>
+                <span></span>
+            </section>
+            <section class="form-control">
+                <input id="password" class="input" type="password" placeholder="Password" required />
+                <small></small>
+                <span></span>
+            </section>
+            <section class="form-control">
+                <input id="confirm-password" type="password" placeholder="Comfirm password" required />
+                <small></small>
+                <span></span>
+            </section>
+            <button type="submit" class="btn-submit">Đăng ký</button>
+            <section class="signup-link">
+                <a href="./index.html">Return</a> Already have an account?<a href="./DangNhap.html">Sign in</a>
+            </section>
+        </form>
+    </section>
+</body>
+
+</html>
