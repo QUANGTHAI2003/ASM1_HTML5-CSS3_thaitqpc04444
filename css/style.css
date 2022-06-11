@@ -35,7 +35,148 @@ nav ul,
 .more {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
+}
+
+.more {
+    position: relative;
+    float: right;
+    padding-right: 15px;
+    z-index: 99;
+}
+
+.more i {
+    font-size: 20px !important;
+}
+
+.search-box {
+    background-image: -moz-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    background-image: -ms-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 24px;
+    transition: all 0.5s ease;
+    outline: none;
+    border: none;
+}
+
+.search-box__input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    padding: 20px 100px 20px 20px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+
+.search-box__btn {
+    position: absolute;
+    right: 0;
+    top: 5px !important;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    z-index: 99;
+}
+
+.search-box input::placeholder {
+    padding: -8px 0;
+}
+
+
+.search-box.open {
+    width: 260px;
+}
+
+.more .user {
+    float: left;
+    display: inline-block;
+}
+
+.more .group-account {
+    position: relative;
+    line-height: 120px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.more .group {
+    width: 200px;
+    background: #fff;
+    position: absolute;
+    top: 95px;
+    right: -55px;
+    z-index: 10;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+    border: 1px solid #91ad41;
+    box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+    -webkit-box-shadow: 0px 10px 27px 12px rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0px 10px 27px 12px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0px 10px 27px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn {
+    background: #91ad41;
+    border-radius: 25px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.btn__signin {
+    background: #91ad41;
+    background-image: -moz-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    background-image: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+    background-image: -ms-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%) !important;
+}
+
+.btn__signup {
+    display: block;
+    font-size: 15px;
+    color: #000 !important;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    border: solid 1px #ebebeb;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn__signup:hover {
+    background-color: #91ad41;
+}
+
+.more .group-account:hover .group {
+    display: block;
+}
+
+.cart-icon {
+    color: #000;
+}
+
+
+
+nav {
+    overflow: hidden;
 }
 
 nav ul li a {
@@ -64,12 +205,6 @@ nav ul li a,
 
 .more li:hover a {
     color: #91ad41;
-}
-
-.fa-solid {
-    width: 20px;
-    height: 20px;
-    color: red;
 }
 
 /* Banner section */
@@ -355,6 +490,8 @@ section .content {
     background-color: #91ad41;
     color: #fff;
 }
+
+
 
 .product-grid {
     display: grid;

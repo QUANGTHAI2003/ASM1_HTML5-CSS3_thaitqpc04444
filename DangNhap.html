@@ -2,17 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/DangNhap-DangKy.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM1 HTM5&CSS3 - thaitqpc04444</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/DangNhap-DangKy.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <section class="container">
+        <!-- Header section -->
+        <header class="header">
+            <div class="logo">
+                <img src="./images/logo.webp" alt="logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="./index.html">Trang Chủ</a></li>
+                    <li><a href="./GioiThieu.html">Giới Thiệu</a></li>
+                    <li><a href="./SanPham.html">Sản phẩm</a></li>
+                    <li><a href="./TinTuc.html">Tin Tức</a></li>
+                    <li><a href="./LienHe.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="more">
+                <div class="search-box">
+                    <input type="text" class="search-box__input" placeholder="Tìm kiếm" />
+                    <button class="search-box__btn">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
+                </div>
+                <div class="user group-account">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <div class="group">
+                        <a href="./DangNhap.html" class="btn btn__signin">Đăng nhập</a>
+                        <a href="./DangKy.html" class="btn btn__signup">Đăng ký</a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <a href="./cart.html">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="background">
+            <div class="content-bg">
+                <h3 class="title-bg">
+                    Đăng nhập tài khoản
+                </h3>
+                <p>
+                    <span class="bg-title">Trang chủ </span>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span class="page"> Đăng nhập tài khoản</span>
+                </p>
+            </div>
+        </section>
         <form>
-            <h1>LOGIN</h1>
+            <h1>Đăng nhập tài khoản</h1>
             <section class="form-control">
                 <input id="username" type="text" placeholder="Username" required />
                 <small></small>
@@ -34,7 +88,7 @@
                 <span></span>
             </section>
             <button type="submit" class="btn-submit">Đăng nhập</button>
-            <section class="more">
+            <section class="more-info">
                 <section class="remember">
                     <section class="rememberpass">
                         <input type="checkbox" />
@@ -59,10 +113,84 @@
                 </section>
             </section>
             <section class="signup-link">
-                <a href="./index.html">Return</a> Not a member? <a href="./DangKy.html">Sign up</a>
+                <p>Bạn chưa có tài khoản, vui lòng đăng ký <a href="./DangKy.html">tại đây</a></p>
             </section>
         </form>
+        <!-- Sign section -->
+        <section class="sign">
+            <div class="sign-content">
+                <h3>Đăng ký nhận tin khuyến mãi</h3>
+                <form action="#">
+                    <input type="email" placeholder="Nhập email của bạn ..."
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="col-ft-1 ft">
+                    <ul class="footer-list">
+                        <li>
+                            <img src="./images/logo.webp" alt="">
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>288 Đường Nguyễn Văn Linh, Hưng Lợi, Ninh Kiều, Cần Thơ</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <a class="thai" href="tel:0774060610">0774060610</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:thaitqpc04444@fpt.edu.vn">thaitqpc04444@fpt.edu.vn</a>
+                        </li>
+                    </ul>
+                    <div class="col-ft-1 ft-address">
+                    </div>
+                </div>
+                <div class="col-ft-2 ft">
+                    <h4>CẨM NANG SỬ DỤNG</h4>
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="./SanPham.html">Sản phẩm</a></li>
+                        <li><a href="./TinTuc.html">Tin tức</a></li>
+                        <li><a href="./LienHe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-ft-3 ft">
+                    <h4>CHÍNH SÁCH</h4>
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="./SanPham.html">Sản phẩm</a></li>
+                        <li><a href="./TinTuc.html">Tin tức</a></li>
+                        <li><a href="./LienHe.html">Liên hệ</a></li>
+                </div>
+                <div class="col-ft-4 ft">
+                    <h4>DỊCH VỤ</h4>
+                    <ul class="footer-list">
+                        <li><a href="./index.html">Trang chủ</a></li>
+                        <li><a href="./GioiThieu.html">Giới thiệu</a></li>
+                        <li><a href="./SanPham.html">Sản phẩm</a></li>
+                        <li><a href="./TinTuc.html">Tin tức</a></li>
+                        <li><a href="./LienHe.html">Liên hệ</a></li>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    <p>Copyright &copy;2022 All rights reserved.
+                        Email: <a href="mailto:" thaitqpc04444@fpt.edu.vn>&nbsp;thaitqpc04444@fpt.edu.vn</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </section>
+    <script src="./js/app.js"></script>
+
 </body>
 
 </html>
