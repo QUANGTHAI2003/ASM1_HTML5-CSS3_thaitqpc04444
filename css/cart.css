@@ -5,6 +5,10 @@
     margin-bottom: 100px;
 }
 
+.shopping-cart h2 {
+    margin: 40px 0;
+}
+
 .cart-item {
     border: 1px solid #ebebeb;
     width: 100%;
@@ -18,7 +22,7 @@
 
 .cart-item-left,
 .cart-item-right {
-    width: 300px;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +31,10 @@
 .col-cart-1 img {
     width: 100px;
     height: 100px;
+}
+
+.col-cart-1 {
+    margin-right: 100px;
 }
 
 .col-cart-2 .price {
@@ -72,6 +80,7 @@
 .col-cart-4 {
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
 }
 
 .col-cart-3 button:active,
