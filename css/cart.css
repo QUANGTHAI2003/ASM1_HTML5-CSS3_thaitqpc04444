@@ -83,6 +83,10 @@
     margin-left: 100px;
 }
 
+.delete {
+    cursor: pointer;
+}
+
 .col-cart-3 button:active,
 .product-close-btn:active input[type="checkbox"] {
     transform: scale(0.95);

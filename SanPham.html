@@ -19,9 +19,9 @@
     <div class="container">
         <!-- Header section -->
         <header class="header">
-            <div class="logo">
+            <section class="logo">
                 <img src="./images/logo.webp" alt="logo">
-            </div>
+            </section>
             <nav class="nav">
                 <ul>
                     <li><a href="./index.html">Trang Chủ</a></li>
@@ -31,26 +31,27 @@
                     <li><a href="./LienHe.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <div class="more">
-                <div class="search-box">
+            <section class="more">
+                <section class="search-box">
                     <input type="text" class="search-box__input" placeholder="Tìm kiếm" />
-                    <button class="search-box__btn">
+                    <button class="search-box__btn button-search">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </button>
-                </div>
-                <div class="user group-account">
+                </section>
+                <section class="user group-account">
                     <i class="fa-solid fa-user-plus"></i>
-                    <div class="group">
+                    <section class="group">
                         <a href="./DangNhap.html" class="btn btn__signin">Đăng nhập</a>
                         <a href="./DangKy.html" class="btn btn__signup">Đăng ký</a>
-                    </div>
-                </div>
-                <div class="cart">
+                    </section>
+                </section>
+                <section class="cart">
                     <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>2</span>
                     </a>
-                </div>
-            </div>
+                </section>
+            </section>
         </header>
         <section class="background">
             <div class="content-bg">
@@ -68,239 +69,555 @@
             <h2 class="text-gradient">Tất cả sản phẩm</h2>
             <div class="product-list-container">
                 <section class="product-grid">
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/18.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Vải thiều Thanh Hà</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">40.000đ</div>
-                                <div class="product-old-price price">79.000đ</div>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/18.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/19.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Đào đỏ Mỹ</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">31.000đ</div>
-                                <div class="product-old-price price">39.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Vải thiều Thanh Hà</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">40.000đ</div>
+                                    <div class="product-old-price price">79.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/20.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Đâu tây Đà Lạt</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">350.000đ</div>
-                                <div class="product-old-price price">480.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/19.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/21.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Táo xanh Mỹ</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">160.000đ</div>
-                                <div class="product-old-price price">220.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Đào đỏ Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">31.000đ</div>
+                                    <div class="product-old-price price">39.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/1.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Thịt bò thăn</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">460.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/20.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix thucphamtuoisong">
-                        <div class="product-thumbnail">
-                            <img src="./images/2.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Thịt bò Canada nhập khẩu</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">450.000đ</div>
-                                <div class="product-old-price price">480.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Đâu tây Đà Lạt</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">350.000đ</div>
+                                    <div class="product-old-price price">480.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/3.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Đậu xanh</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">12.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/21.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix cacloaihat">
-                        <div class="product-thumbnail">
-                            <img src="./images/4.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Ngũ cốc</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">120.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Táo xanh Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">160.000đ</div>
+                                    <div class="product-old-price price">220.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix raucu">
-                        <div class="product-thumbnail">
-                            <img src="./images/5.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Chanh dây nhập khẩu Mỹ</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">450.000đ</div>
-                                <div class="product-old-price price">480.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/1.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix raucu">
-                        <div class="product-thumbnail">
-                            <img src="./images/6.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Cá hồi Mỹ</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">600.000đ</div>
-                                <div class="product-old-price price">800.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Thịt bò thăn</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">460.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix raucu">
-                        <div class="product-thumbnail">
-                            <img src="./images/7.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Cua bể</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">250.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix thucphamtuoisong">
+                            <div class="product-thumbnail">
+                                <img src="./images/2.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/8.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Mực Thanh Hóa</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">70.000đ</div>
-                                <div class="product-old-price price">80.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Thịt bò Canada nhập khẩu</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">450.000đ</div>
+                                    <div class="product-old-price price">480.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/9.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Sườn lợn Brazil</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">200.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/3.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/10.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Chanh tươi</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">30.000đ</div>
-                                <div class="product-old-price price">45.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Đậu xanh</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">12.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/21.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Táo xanh Mỹ</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">160.000đ</div>
-                                <div class="product-old-price price">220.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix cacloaihat">
+                            <div class="product-thumbnail">
+                                <img src="./images/4.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/22.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Xoài xiêm</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">300.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Ngũ cốc</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">120.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/23.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Bơ Trung Đông</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">300.000đ</div>
-                                <div class="product-old-price price">350.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix raucu">
+                            <div class="product-thumbnail">
+                                <img src="./images/5.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/24.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Nấm Lim xanh</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">890.000đ</div>
-                                <div class="product-old-price price">990.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Chanh dây nhập khẩu Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">450.000đ</div>
+                                    <div class="product-old-price price">480.000đ</div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/25.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Thịt bò Kobe</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">600.000đ</div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix raucu">
+                            <div class="product-thumbnail">
+                                <img src="./images/6.webp" alt="">
                             </div>
-                        </div>
-                    </article>
-                    <article class="product-card mix tesla">
-                        <div class="product-thumbnail">
-                            <img src="./images/26.webp" alt="">
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-name">Sầu riêng Miền Nam</h3>
-                            <div class="product-price">
-                                <div class="product-new-price price">45.000đ</div>
-                                <div class="product-old-price price">60.000đ</div>
+                            <div class="product-content">
+                                <h3 class="product-name">Cá hồi Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">600.000đ
+                                    </div>
+                                    <div class="product-old-price price">800.000đ
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </article>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix raucu">
+                            <div class="product-thumbnail">
+                                <img src="./images/7.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Cua bể</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        250.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/8.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Mực Thanh Hóa</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        70.000đ</div>
+                                    <div class="product-old-price price">
+                                        80.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/9.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Sườn lợn Brazil
+                                </h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        200.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/10.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Chanh tươi
+                                </h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        30.000đ</div>
+                                    <div class="product-old-price price">
+                                        45.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/21.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Táo
+                                    xanh Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        160.000đ</div>
+                                    <div class="product-old-price price">
+                                        220.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/22.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">
+                                    Xoài xiêm</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        300.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/23.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">
+                                    Bơ Trung Đông</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        300.000đ</div>
+                                    <div class="product-old-price price">
+                                        350.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/24.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">
+                                    Nấm Lim xanh
+                                </h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        890.000đ
+                                    </div>
+                                    <div class="product-old-price price">
+                                        990.000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/25.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">
+                                    Thịt bò Kobe
+                                </h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        600.000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/26.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">
+                                    Sầu
+                                    riêng
+                                    Miền Nam
+                                </h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        45.000đ
+                                    </div>
+                                    <div class="product-old-price price">
+                                        60.000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
                 </section>
             </div>
         </section>

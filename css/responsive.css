@@ -1,0 +1,78 @@
+@media screen and (max-width: 1280px) {
+    .collection .content {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .collection .content h1 {
+        font-size: 24px;
+    }
+
+    .collection .content span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .collection .content {
+        width: 80%;
+        display: grid;
+        margin: auto;
+        left: 40px
+    }
+
+    .collection .content h1 {
+        font-size: 20px;
+    }
+
+    .collection .content span {
+        font-size: 14px;
+    }
+
+    .hotline-content {
+        max-width: 60%;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4 {
+        height: 340px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .col-item {
+        flex: 1;
+    }
+
+    .brand {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .brand img {
+        margin: 0 auto;
+    }
+
+    .sign-content h3 {
+        font-size: 24px;
+    }
+
+    .sign-content form input {
+        width: 300px;
+    }
+
+    .footer-list span,
+    .footer-list li a {
+        font-size: 14px;
+    }
+
+    .ft h4 {
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+}
+
+/* Vì thiếu thời gian nên em chưa hoàn thành phần responsive */

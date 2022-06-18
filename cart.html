@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <div class="container">
+    <section class="container">
         <!-- Header section -->
         <header class="header">
-            <div class="logo">
+            <section class="logo">
                 <img src="./images/logo.webp" alt="logo">
-            </div>
+            </section>
             <nav class="nav">
                 <ul>
                     <li><a href="./index.html">Trang Chủ</a></li>
@@ -33,29 +33,30 @@
                     <li><a href="./LienHe.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <div class="more">
-                <div class="search-box">
+            <section class="more">
+                <section class="search-box">
                     <input type="text" class="search-box__input" placeholder="Tìm kiếm" />
-                    <button class="search-box__btn">
+                    <button class="search-box__btn button-search">
                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     </button>
-                </div>
-                <div class="user group-account">
+                </section>
+                <section class="user group-account">
                     <i class="fa-solid fa-user-plus"></i>
-                    <div class="group">
+                    <section class="group">
                         <a href="./DangNhap.html" class="btn btn__signin">Đăng nhập</a>
                         <a href="./DangKy.html" class="btn btn__signup">Đăng ký</a>
-                    </div>
-                </div>
-                <div class="cart">
-                    <a href="./cart.html" class="active">
+                    </section>
+                </section>
+                <section class="cart">
+                    <a href="./cart.html">
                         <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span>2</span>
                     </a>
-                </div>
-            </div>
+                </section>
+            </section>
         </header>
         <section class="background">
-            <div class="content-bg">
+            <section class="content-bg">
                 <h3 class="title-bg">
                     Giỏ hàng
                 </h3>
@@ -64,24 +65,24 @@
                     <i class="fa-solid fa-angle-right"></i>
                     <span class="page">Giỏ hàng</span>
                 </p>
-            </div>
+            </section>
         </section>
         <!-- Cart section -->
         <section class="shopping-cart">
             <h2>Giỏ hàng của bạn (2 sản phẩm)</h2>
-            <div class="cart">
+            <section class="cart">
                 <article class="cart-item">
-                    <div class="cart-item-left">
-                        <div class="col-cart-1">
+                    <section class="cart-item-left">
+                        <section class="col-cart-1">
                             <img src="./images/1.webp" alt="">
-                        </div>
-                        <div class="col-cart-2">
-                            <div class="name">Thịt bò thăn</div>
-                            <div class="price" value="460000">460.000đ</div>
-                        </div>
-                    </div>
-                    <div class="cart-item-right">
-                        <div class="col-cart-3">
+                        </section>
+                        <section class="col-cart-2">
+                            <section class="name">Thịt bò thăn</section>
+                            <section class="price" value="460000">460.000đ</section>
+                        </section>
+                    </section>
+                    <section class="cart-item-right">
+                        <section class="col-cart-3">
                             <button id="decrement">
                                 <i class="fa-solid fa-minus"></i>
                             </button>
@@ -89,29 +90,29 @@
                             <button id="increment">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
-                        </div>
-                        <div class="col-cart-4">
+                        </section>
+                        <section class="col-cart-4">
                             <span class="tongtien">Tổng tiền:</span>
                             <span class="sum-price">460.000đ</span>
-                            <span>
+                            <span class="delete">
                                 <i class="fa-solid fa-trash"></i>
                                 Xóa
                             </span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                 </article>
                 <article class="cart-item">
-                    <div class="cart-item-left">
-                        <div class="col-cart-1">
+                    <section class="cart-item-left">
+                        <section class="col-cart-1">
                             <img src="./images/2.webp" alt="">
-                        </div>
-                        <div class="col-cart-2">
-                            <div class="name">Thịt bò Canada nhập khẩu</div>
-                            <div class="price" value="450000">450.000đ</div>
-                        </div>
-                    </div>
-                    <div class="cart-item-right">
-                        <div class="col-cart-3">
+                        </section>
+                        <section class="col-cart-2">
+                            <section class="name">Thịt bò Canada nhập khẩu</section>
+                            <section class="price" value="450000">450.000đ</section>
+                        </section>
+                    </section>
+                    <section class="cart-item-right">
+                        <section class="col-cart-3">
                             <button id="decrement">
                                 <i class="fa-solid fa-minus"></i>
                             </button>
@@ -119,46 +120,46 @@
                             <button id="increment">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
-                        </div>
-                        <div class="col-cart-4">
+                        </section>
+                        <section class="col-cart-4">
                             <span class="tongtien">Tổng tiền:</span>
                             <span class="sum-price">450.000đ</span>
-                            <span>
+                            <span class="delete">
                                 <i class="fa-solid fa-trash"></i>
                                 Xóa
                             </span>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                 </article>
-            </div>
+            </section>
             <p>
                 <span>Thành tiền:</span>
                 <span>
-                    <strong>910.000đ</strong>
+                    <strong class="totalPrice">910.000đ</strong>
                 </span>
             </p>
-            <div class="button">
+            <section class="button">
                 <a href="./SanPham.html">
                     <button class="return" type="button" title="Tiếp tục mua hàng">Tiếp tục mua hàng</button>
                 </a>
                 <button class="submit" type="button" title="Đặt hàng ngay">Đặt hàng ngay</button>
-            </div>
+            </section>
         </section>
         <!-- Sign section -->
         <section class="sign">
-            <div class="sign-content">
+            <section class="sign-content">
                 <h3>Đăng ký nhận tin khuyến mãi</h3>
                 <form action="#">
                     <input type="email" placeholder="Nhập email của bạn ..."
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <button type="submit">Đăng ký</button>
                 </form>
-            </div>
+            </section>
         </section>
         <!-- Footer section -->
         <footer class="footer">
-            <div class="footer-links">
-                <div class="col-ft-1 ft">
+            <section class="footer-links">
+                <section class="col-ft-1 ft">
                     <ul class="footer-list">
                         <li>
                             <img src="./images/logo.webp" alt="">
@@ -176,10 +177,10 @@
                             <a href="mailto:thaitqpc04444@fpt.edu.vn">thaitqpc04444@fpt.edu.vn</a>
                         </li>
                     </ul>
-                    <div class="col-ft-1 ft-address">
-                    </div>
-                </div>
-                <div class="col-ft-2 ft">
+                    <section class="col-ft-1 ft-address">
+                    </section>
+                </section>
+                <section class="col-ft-2 ft">
                     <h4>CẨM NANG SỬ DỤNG</h4>
                     <ul class="footer-list">
                         <li><a href="./index.html">Trang chủ</a></li>
@@ -188,8 +189,8 @@
                         <li><a href="./TinTuc.html">Tin tức</a></li>
                         <li><a href="./LienHe.html">Liên hệ</a></li>
                     </ul>
-                </div>
-                <div class="col-ft-3 ft">
+                </section>
+                <section class="col-ft-3 ft">
                     <h4>CHÍNH SÁCH</h4>
                     <ul class="footer-list">
                         <li><a href="./index.html">Trang chủ</a></li>
@@ -197,8 +198,8 @@
                         <li><a href="./SanPham.html">Sản phẩm</a></li>
                         <li><a href="./TinTuc.html">Tin tức</a></li>
                         <li><a href="./LienHe.html">Liên hệ</a></li>
-                </div>
-                <div class="col-ft-4 ft">
+                </section>
+                <section class="col-ft-4 ft">
                     <h4>DỊCH VỤ</h4>
                     <ul class="footer-list">
                         <li><a href="./index.html">Trang chủ</a></li>
@@ -206,17 +207,17 @@
                         <li><a href="./SanPham.html">Sản phẩm</a></li>
                         <li><a href="./TinTuc.html">Tin tức</a></li>
                         <li><a href="./LienHe.html">Liên hệ</a></li>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="copyright">
+                </section>
+            </section>
+            <section class="footer-copyright">
+                <section class="copyright">
                     <p>Copyright &copy;2022 All rights reserved.
                         Email: <a href="mailto:" thaitqpc04444@fpt.edu.vn>&nbsp;thaitqpc04444@fpt.edu.vn</a>
                     </p>
-                </div>
-            </div>
+                </section>
+            </section>
         </footer>
-    </div>
+    </section>
     <script src="./js/app.js"></script>
     <script src="./js/cart.js"></script>
 </body>
