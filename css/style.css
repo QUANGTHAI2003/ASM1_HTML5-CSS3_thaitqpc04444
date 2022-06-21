@@ -27,7 +27,7 @@ header {
     width: 100%;
     height: 120px;
     background-color: #fff;
-    max-width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -40,11 +40,19 @@ nav ul,
     list-style: none;
 }
 
+.nav {
+    transition: all 10s linear;
+}
+
+.bar {
+    display: none;
+}
+
 .more {
     position: relative;
     float: right;
     padding-right: 15px;
-    z-index: 99;
+    /* z-index: 99; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +233,10 @@ nav ul li a,
     text-decoration: none;
 }
 
+.nav .close {
+    display: none;
+}
+
 .more li a {
     color: #000;
     transition: all 0.3s ease-in-out;
@@ -241,8 +253,8 @@ nav ul li a,
 
 /* Collection section */
 .collection {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: -7px;
 }
 
@@ -425,16 +437,12 @@ section .content {
 }
 
 .about-us .icon-body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex;
+justify-content: space-between;
+align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 30px;
-}
-
-.about-us .icon-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .icon-item img {
@@ -706,8 +714,7 @@ section .content {
 }
 
 .col-item {
-    width: 390px;
-    height: 360px;
+    width: auto;
     border: 1px solid #ccc;
 }
 
@@ -771,6 +778,7 @@ section .content {
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 32px;
+    margin-top: -180px;
 }
 
 .brand {
