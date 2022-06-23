@@ -8,29 +8,32 @@
     <title>ASM1 HTM5&CSS3 - thaitqpc04444</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 </head>
 
 <body>
-    <section class="container">
+    <div class="container">
         <!-- Header section -->
         <header class="header">
             <section class="logo">
                 <img src="./images/logo.webp" alt="logo">
             </section>
+            <section class="bar">
+                <i class="fa-solid fa-bars"></i>
+            </section>
             <nav class="nav">
+                <i class="fa-solid fa-xmark close"></i>
                 <ul>
                     <li><a href="./index.html">Trang Chủ</a></li>
                     <li><a href="./GioiThieu.html">Giới Thiệu</a></li>
                     <li>
                         <section class="main-subnav">
-                            <a href="./SanPham.html">Sản phẩm</a>
+                            <a href="./SanPham.html" class="active">Sản phẩm</a>
                             <i class="fa-solid fa-angle-down"></i>
                             <ul class="subnav">
                                 <li>
@@ -99,105 +102,171 @@
             </section>
         </header>
         <section class="background">
-            <section class="content-bg">
+            <div class="content-bg">
                 <h3 class="title-bg">
-                    Giỏ hàng
+                    Tất cả sản phẩm
                 </h3>
                 <p>
-                    <span class="bg-title">Trang chủ </span>
+                    <span class="bg-title">Trang chủ</span>
                     <i class="fa-solid fa-angle-right"></i>
-                    <span class="page">Giỏ hàng</span>
+                    <span class="page">Rau Củ</span>
                 </p>
+            </div>
+        </section>
+        <section class="product-list">
+            <h2 class="text-gradient">Tất cả sản phẩm</h2>
+            <section class="product-list-container">
+                <section class="product-grid">
+                    <section class="product-grid-inner">
+                        <article class="product-card mix raucu">
+                            <div class="product-thumbnail">
+                                <img src="./images/6.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Cá hồi Mỹ</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">600.000đ
+                                    </div>
+                                    <div class="product-old-price price">800.000đ
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix raucu">
+                            <div class="product-thumbnail">
+                                <img src="./images/7.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Cua bể</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        250.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/8.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Mực Thanh Hóa</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        70.000đ</div>
+                                    <div class="product-old-price price">
+                                        80.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/29.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Mực Thanh Hóa</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        70.000đ</div>
+                                    <div class="product-old-price price">
+                                        80.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="product-grid-inner">
+                        <article class="product-card mix tesla">
+                            <div class="product-thumbnail">
+                                <img src="./images/30.webp" alt="">
+                            </div>
+                            <div class="product-content">
+                                <h3 class="product-name">Mực Thanh Hóa</h3>
+                                <div class="product-price">
+                                    <div class="product-new-price price">
+                                        70.000đ</div>
+                                    <div class="product-old-price price">
+                                        80.000đ</div>
+                                </div>
+                            </div>
+                            <ul class="icon-group">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                </section>
             </section>
         </section>
-        <!-- Cart section -->
-        <section class="shopping-cart">
-            <h2>Giỏ hàng của bạn (2 sản phẩm)</h2>
-            <section class="cart">
-                <article class="cart-item">
-                    <section class="cart-item-left">
-                        <section class="col-cart-1">
-                            <img src="./images/1.webp" alt="">
-                        </section>
-                        <section class="col-cart-2">
-                            <section class="name">Thịt bò thăn</section>
-                            <section class="price" value="460000">460.000đ</section>
-                        </section>
-                    </section>
-                    <section class="cart-item-right">
-                        <section class="col-cart-3">
-                            <button id="decrement">
-                                <i class="fa-solid fa-minus"></i>
-                            </button>
-                            <span id="quantity">1</span>
-                            <button id="increment">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </section>
-                        <section class="col-cart-4">
-                            <span class="tongtien">Tổng tiền:</span>
-                            <span class="sum-price">460.000đ</span>
-                            <span class="delete">
-                                <i class="fa-solid fa-trash"></i>
-                                Xóa
-                            </span>
-                        </section>
-                    </section>
-                </article>
-                <article class="cart-item">
-                    <section class="cart-item-left">
-                        <section class="col-cart-1">
-                            <img src="./images/2.webp" alt="">
-                        </section>
-                        <section class="col-cart-2">
-                            <section class="name">Thịt bò Canada nhập khẩu</section>
-                            <section class="price" value="450000">450.000đ</section>
-                        </section>
-                    </section>
-                    <section class="cart-item-right">
-                        <section class="col-cart-3">
-                            <button id="decrement">
-                                <i class="fa-solid fa-minus"></i>
-                            </button>
-                            <span id="quantity">1</span>
-                            <button id="increment">
-                                <i class="fa-solid fa-plus"></i>
-                            </button>
-                        </section>
-                        <section class="col-cart-4">
-                            <span class="tongtien">Tổng tiền:</span>
-                            <span class="sum-price">450.000đ</span>
-                            <span class="delete">
-                                <i class="fa-solid fa-trash"></i>
-                                Xóa
-                            </span>
-                        </section>
-                    </section>
-                </article>
-            </section>
-            <p>
-                <span>Thành tiền:</span>
-                <span>
-                    <strong class="totalPrice">910.000đ</strong>
-                </span>
-            </p>
-            <section class="button">
-                <a href="./SanPham.html">
-                    <button class="return" type="button" title="Tiếp tục mua hàng">Tiếp tục mua hàng</button>
-                </a>
-                <button class="submit" type="button" title="Đặt hàng ngay">Đặt hàng ngay</button>
-            </section>
-        </section>
-        <!-- Sign section -->
         <section class="sign">
-            <section class="sign-content">
+            <div class="sign-content">
                 <h3>Đăng ký nhận tin khuyến mãi</h3>
                 <form action="#">
                     <input type="email" placeholder="Nhập email của bạn ..."
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                     <button type="submit">Đăng ký</button>
                 </form>
-            </section>
+            </div>
         </section>
         <!-- Footer section -->
         <footer class="footer">
@@ -339,9 +408,8 @@
                 </section>
             </section>
         </footer>
-    </section>
+    </div>
     <script src="./js/app.js"></script>
-    <script src="./js/cart.js"></script>
 </body>
 
 </html>

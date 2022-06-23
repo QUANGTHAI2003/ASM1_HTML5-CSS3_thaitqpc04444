@@ -1,4 +1,3 @@
-// Change width search box
 const btnSearch = document.querySelector('.search-box__btn');
 
 
@@ -17,7 +16,7 @@ linkProduct.forEach(l => l.addEventListener('click', function () {
     this.classList.add('active-product');
 }));
 
-// 
+// check input
 var username = document.querySelector('#username');
 var email = document.querySelector('#email');
 var password = document.querySelector('#password');
@@ -107,3 +106,35 @@ form.addEventListener('submit', function (e) {
     checkMatchPasswordError(password, confirmPassword);
 })
 
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const indents = $$('.indent')
+const infos = $$('.info-item')
+
+indents.forEach((tab, index) => {
+    const info = infos[index];
+    tab.onclick = function () {
+        $('.indent.change').classList.remove('change');
+        $('.info-item.change').classList.remove('change');
+        this.classList.add('change')
+        info.classList.add('change')
+        console.log(this);
+    }
+})
