@@ -129,6 +129,12 @@
         background-color: transparent;
     }
 
+    .subnav li:hover a {
+        color: #000;
+    }
+
+
+
     .main-subnav:hover .subnav {
         display: block;
     }
@@ -267,7 +273,7 @@
     }
 
     .active {
-        color: #000 !important;
+        color: #fff !important;
     }
 }
 
@@ -399,6 +405,10 @@
         margin-left: 1rem;
         animation: none;
         background-color: transparent;
+    }
+
+    .subnav li:hover a {
+        color: #000;
     }
 
     .main-subnav:hover .subnav {
@@ -674,6 +684,10 @@
         margin-left: 1rem;
         animation: none;
         background-color: transparent;
+    }
+
+    .subnav li:hover a {
+        color: #000;
     }
 
     .main-subnav:hover .subnav {

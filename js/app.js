@@ -7,16 +7,14 @@ btnSearch.addEventListener('click', function () {
     this.previousElementSibling.focus();
 })
 
-
 // Active link 
 const linkProduct = document.querySelectorAll('.product__item');
-
 linkProduct.forEach(l => l.addEventListener('click', function () {
     linkProduct.forEach(l => l.classList.remove('active-product'));
     this.classList.add('active-product');
 }));
 
-// check input
+// Check input
 var username = document.querySelector('#username');
 var email = document.querySelector('#email');
 var password = document.querySelector('#password');
@@ -106,6 +104,8 @@ form.addEventListener('submit', function (e) {
     checkMatchPasswordError(password, confirmPassword);
 })
 
+
+// show and hide back to top
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -116,12 +116,12 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
+// Change tab
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
@@ -138,38 +138,14 @@ indents.forEach((tab, index) => {
     }
 })
 
+// Show menu and overlay
 $('.menu').addEventListener('click', () => {
     $('.nav').classList.add('show-menu');
     $('.overlay').style.display = 'block'
 })
 
+// Hide menu and overlay
 $('.overlay').addEventListener('click', () => {
     $('.nav').classList.remove('show-menu');
     $('.overlay').style.display = 'none'
-
-})
-
-var down = document.querySelector('.main-subnav');
-console.log(down);
-var subNav = document.querySelector('.subnav');
-console.log(subNav);
-
-down.addEventListener('click', function () {
-    subNav.classList.toggle('show-menu');
-
-});
-
-var btnFooter = document.querySelectorAll('.ft h4');
-var ftList = document.querySelector('.footer .footer-list:not(:first-child)');
-
-
-// btnFooter.addEventListener('click', function () {
-//     ftList.classList.toggle('show-list');
-//     console.log(this);
-// })
-
-btnFooter.forEach(ftBtn => {
-    ftBtn.addEventListener('click', function () {
-        ftList.classList.toggle('show-list');
-    })
 })
