@@ -260,6 +260,15 @@
         width: 100%;
         margin: 1rem 0;
     }
+
+    .details,
+    .title-details {
+        flex-direction: column;
+    }
+
+    .active {
+        color: #000 !important;
+    }
 }
 
 @media only screen and (min-width: 36.063rem) and (max-width: 48rem) {
@@ -522,6 +531,12 @@
         width: 100%;
         margin: 1rem 0;
     }
+
+    .details,
+    .title-details {
+        flex-direction: column;
+    }
+
 
 }
 
@@ -799,6 +814,10 @@
         display: block;
         width: 100%;
         margin: 1rem 0;
+    }
+
+    .details {
+        flex-direction: column;
     }
 }
 

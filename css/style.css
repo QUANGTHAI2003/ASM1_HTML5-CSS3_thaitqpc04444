@@ -1348,31 +1348,16 @@ align-items: center; */
 }
 
 .details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.images-details {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     display: flex;
-    flex-direction: column;
-}
-
-.images-details img {
-    width: 555px;
-    height: 555px;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.gallery-item img {
-    width: 100px;
-    height: 100px;
-    border: 1px solid #ebebeb;
-    margin: 0 16px;
+.images-details,
+.article {
+    flex: 1;
 }
 
 .content h2:only-child {
