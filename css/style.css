@@ -80,6 +80,7 @@ nav ul,
     top: -29px;
     right: 16px;
 }
+
 .main-subnav:hover .subnav {
     display: block;
 }
@@ -107,6 +108,10 @@ nav ul,
 
 .subnav li a i {
     margin-right: 8px;
+}
+
+.header-top {
+    display: none;
 }
 
 @keyframes nav-item-animation {
@@ -181,7 +186,7 @@ nav ul,
     background-color: #fff;
     border: none;
     outline: none;
-    z-index: 99;
+    z-index: 14;
     border-radius: 100rem;
     overflow: hidden;
 }
@@ -398,12 +403,12 @@ nav ul li a,
     color: #fff;
     position: absolute;
     top: 50%;
-    left: 60px;
-    width: 60%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
+    left: 50%;
+    width: 80%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
 }
@@ -455,6 +460,9 @@ nav ul li a,
     line-height: 45px;
     background: #27272f;
     position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -808,7 +816,7 @@ align-items: center; */
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 260px;
+    margin-bottom: 64px;
 }
 
 .lastest-news-container {
@@ -847,7 +855,7 @@ align-items: center; */
 }
 
 .bottom {
-    margin: 300px 0 64px 0;
+    margin: 30px 0 30px 0;
 }
 
 .content-news p {
@@ -883,7 +891,7 @@ align-items: center; */
     max-width: 80%;
     margin: 0 auto;
     margin-bottom: 32px;
-    margin-top: -180px;
+    margin-top: 100px;
 }
 
 .brand {
@@ -967,7 +975,7 @@ align-items: center; */
     height: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.4fr 1fr;
     justify-content: space-between;
     align-items: center;
 }
@@ -1055,9 +1063,9 @@ align-items: center; */
 
 .footer-copyright {
     position: relative;
+    bottom: 0;
     right: 0;
     left: 0;
-    bottom: 0;
     width: 100%;
     height: 58px;
     background-color: #fff;
@@ -1146,9 +1154,8 @@ align-items: center; */
 }
 
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     margin: 32px 0;
 }
 
@@ -1169,8 +1176,14 @@ align-items: center; */
 }
 
 .contact-right {
-    flex: 2;
+    width: 100%;
+    height: 100%;
     margin-left: 32px;
+}
+
+.contact-right iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .col-ft-top {

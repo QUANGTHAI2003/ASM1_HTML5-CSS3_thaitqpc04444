@@ -138,13 +138,15 @@ indents.forEach((tab, index) => {
     }
 })
 
-
 $('.menu').addEventListener('click', () => {
     $('.nav').classList.add('show-menu');
+    $('.overlay').style.display = 'block'
 })
 
-$('.close').addEventListener('click', () => {
+$('.overlay').addEventListener('click', () => {
     $('.nav').classList.remove('show-menu');
+    $('.overlay').style.display = 'none'
+
 })
 
 var down = document.querySelector('.main-subnav');
