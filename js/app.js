@@ -135,6 +135,39 @@ indents.forEach((tab, index) => {
         $('.info-item.change').classList.remove('change');
         this.classList.add('change')
         info.classList.add('change')
-        console.log(this);
     }
+})
+
+
+$('.menu').addEventListener('click', () => {
+    $('.nav').classList.add('show-menu');
+})
+
+$('.close').addEventListener('click', () => {
+    $('.nav').classList.remove('show-menu');
+})
+
+var down = document.querySelector('.main-subnav');
+console.log(down);
+var subNav = document.querySelector('.subnav');
+console.log(subNav);
+
+down.addEventListener('click', function () {
+    subNav.classList.toggle('show-menu');
+
+});
+
+var btnFooter = document.querySelectorAll('.ft h4');
+var ftList = document.querySelector('.footer .footer-list:not(:first-child)');
+
+
+// btnFooter.addEventListener('click', function () {
+//     ftList.classList.toggle('show-list');
+//     console.log(this);
+// })
+
+btnFooter.forEach(ftBtn => {
+    ftBtn.addEventListener('click', function () {
+        ftList.classList.toggle('show-list');
+    })
 })

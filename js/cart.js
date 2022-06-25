@@ -1,4 +1,3 @@
-
 // Change quantity of cart
 const decrementBtn = document.querySelectorAll('#decrement');
 const quantityElem = document.querySelectorAll('#quantity');
